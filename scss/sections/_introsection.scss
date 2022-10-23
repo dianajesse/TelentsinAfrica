@@ -1,0 +1,78 @@
+@use'../custom'as *;
+@use '../components/mixins' as *;
+
+
+.introsec{
+    @include media-breakpoint-down(sm){
+      align-content: center;
+      padding-top: 80px;
+          }
+    
+    align-content: center;
+    padding-top: 80px;
+
+.c-item{
+    height: 485px;
+}
+
+.img-item{
+     height: 100%;
+     object-fit: cover;
+     filter: brightness(0.4);
+}
+
+.btn-looking{
+    font-weight: 500;
+    padding-top: 80px;
+    top:50px;
+}
+
+.newsletter{
+  @include media-breakpoint-down(sm){
+    align-content: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+        }
+}
+
+.middle{
+    text-align: justify;
+}
+
+
+.row img {
+    width: auto;
+    max-width:100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+
+  .assess{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.client{
+    text-align: center;
+    
+}
+.campanies {
+
+    &__logo-box {
+        max-width: 100%;
+        height: 3rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+        position: relative;
+
+        img {
+            height: 100%;
+
+            &:hover {
+                filter: grayscale(120);
+            }
+        }
+    }
+}
+}

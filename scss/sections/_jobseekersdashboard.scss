@@ -1,0 +1,178 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 25.7px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 5;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://countryflagsapi.com/png/gb);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+// .lang-menu ul {
+//     margin: 0;
+//     padding: 0;
+//     display: none;
+//     background-color: #fff;
+//     border: 1px solid #f8f8f8;
+//     position: absolute;
+//     top: 45px;
+//     right: 0px;
+//     width: 125px;
+//     border-radius: 5px;
+//     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+// }
+
+
+// .lang-menu ul li {
+//     list-style: none;
+//     text-align: left;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .lang-menu ul li a {
+//     text-decoration: none;
+//     width: 125px;
+//     padding: 5px 10px;
+//     display: block;
+// }
+
+// .lang-menu ul li:hover {
+//     background-color: #f2f2f2;
+// }
+
+// .lang-menu ul li a:before {
+//     content: '';
+//     display: inline-block;
+//     width: 25px;
+//     height: 25px;
+//     vertical-align: middle;
+//     margin-right: 10px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
+
+// .de:before {
+//     background-image: url(https://countryflagsapi.com/png/germany);
+// }
+
+// .en:before {
+//     background-image: url(https://countryflagsapi.com/png/england);
+// }
+// .fr:before {
+//     background-image: url(https://countryflagsapi.com/png/france);
+// }
+
+
+
+// .lang-menu:hover ul {
+//     display: block;
+// }
+
+
+
+
+//footer//
+.footer{
+    background-color: #0443A1;
+  }
+  .footer-distributed {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 2rem;
+    font: normal 16px sans-serif;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #F3136C;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }

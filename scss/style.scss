@@ -1,0 +1,17 @@
+//@use"./custom";
+
+
+//import component
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+
+//import sections
+@use 'sections/navbar';
+@use 'sections/introsection';
+@use 'sections/footer';
+@use'sections/login';
+@use'sections/register';
+@use'sections/jobseekersdashboard';
+
